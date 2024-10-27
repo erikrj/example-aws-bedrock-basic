@@ -1,0 +1,37 @@
+{
+  "name": "example-aws-bedrock-basic",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "prebuild": "prettier --check . && eslint .",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "vitest run --coverage",
+    "clean": "find ./src -type f \\( -name \"*.mjs\" -o -name \"*.d.mts\" -o -name \"*.map\" \\) -exec rm -f {} \\;",
+    "fmt": "prettier --write .",
+    "example-invoke-model": "node ./src/example-invoke-model.mjs",
+    "example-converse": "node ./src/example-converse.mjs",
+    "example-converse-stream": "node ./src/example-converse-stream.mjs",
+    "example-converse-stream-with-prompts": "node ./src/example-converse-stream-with-prompts.mjs",
+    "example-conversation": "node ./src/example-conversation.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-agent-runtime": "^3.679.0",
+    "@aws-sdk/client-bedrock-runtime": "^3.679.0",
+    "add": "^2.0.6",
+    "pnpm": "^9.12.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.57.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "20.12.7",
+    "@vitest/coverage-v8": "^1.6.0",
+    "aws-sdk-client-mock": "^1.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "source-map-support": "^0.5.21",
+    "typescript": "~5.4.5",
+    "typescript-eslint": "^7.16.0",
+    "vitest": "^1.6.0"
+  }
+}
