@@ -9,11 +9,11 @@
     "test": "vitest run --coverage",
     "clean": "find ./src -type f \\( -name \"*.mjs\" -o -name \"*.d.mts\" -o -name \"*.map\" \\) -exec rm -f {} \\;",
     "fmt": "prettier --write .",
-    "example-invoke-model": "node ./src/example-invoke-model.mjs",
-    "example-converse": "node ./src/example-converse.mjs",
-    "example-converse-stream": "node ./src/example-converse-stream.mjs",
-    "example-converse-stream-with-prompts": "node ./src/example-converse-stream-with-prompts.mjs",
-    "example-conversation": "node ./src/example-conversation.mjs"
+    "example-invoke-model": "tsc && node ./src/example-invoke-model.mjs",
+    "example-converse": "tsc && node ./src/example-converse.mjs",
+    "example-converse-stream": "tsc && node ./src/example-converse-stream.mjs",
+    "example-converse-stream-with-prompts": "tsc && node ./src/example-converse-stream-with-prompts.mjs",
+    "example-conversation": "tsc && node ./src/example-conversation.mjs"
   },
   "dependencies": {
     "@aws-sdk/client-bedrock-agent-runtime": "^3.679.0",
