@@ -16,7 +16,7 @@ async function main() {
     new InvokeModelCommand({
       // This model needs to be enabled in the AWS console in your account
       // in the region you're using.
-      modelId: 'anthropic.claude-3-5-sonnet-20241022-v2:0',
+      modelId: 'us.anthropic.claude-3-5-sonnet-20241022-v2:0',
       // BedRock does not abstract payloads using InvokeModel. You have to know
       // the format. For this reason it's recommended you use the Converse API
       // which provides abstractions for all models that support messages.

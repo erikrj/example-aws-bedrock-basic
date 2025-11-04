@@ -16,7 +16,7 @@ async function main() {
     new ConverseStreamCommand({
       // This model needs to be enabled in the AWS console in your account
       // in the region you're using.
-      modelId: 'anthropic.claude-3-5-sonnet-20241022-v2:0',
+      modelId: 'us.anthropic.claude-3-5-sonnet-20241022-v2:0',
       // AWS Bedrock abstracts messages using the Converse API so this works with other models.
       messages: [
         {
